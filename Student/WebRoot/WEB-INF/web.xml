@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <filter>
+    <filter-name>charSet</filter-name>
+    <filter-class>cn.filter.CharEncodingFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>cn.filter.LoginFillter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>charSet</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/pages/*</url-pattern>
+  </filter-mapping> 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doRegist</servlet-name>
+    <servlet-class>cn.servlet.doRegist</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doLogin</servlet-name>
+    <servlet-class>cn.servlet.doLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>cn.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContentQServlet</servlet-name>
+    <servlet-class>cn.servlet.ContentQServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CTopicServlet</servlet-name>
+    <servlet-class>cn.servlet.CTopicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TextServlet</servlet-name>
+    <servlet-class>cn.servlet.TextServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>newsList</servlet-name>
+    <servlet-class>cn.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addStudent</servlet-name>
+    <servlet-class>cn.servlet.addStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addNews</servlet-name>
+    <servlet-class>cn.servlet.addNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addTopic</servlet-name>
+    <servlet-class>cn.servlet.addTopic</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateNews</servlet-name>
+    <servlet-class>cn.servlet.updateNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteNews</servlet-name>
+    <servlet-class>cn.servlet.deleteNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContentServlet</servlet-name>
+    <servlet-class>cn.servlet.ContentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delStudent</servlet-name>
+    <servlet-class>cn.servlet.delStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>topicServlet</servlet-name>
+    <servlet-class>cn.servlet.topicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doRegist</servlet-name>
+    <url-pattern>/servlet/doRegist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doLogin</servlet-name>
+    <url-pattern>/servlet/doLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/servlet/NewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContentQServlet</servlet-name>
+    <url-pattern>/servlet/ContentQServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CTopicServlet</servlet-name>
+    <url-pattern>/servlet/CTopicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TextServlet</servlet-name>
+    <url-pattern>/servlet/TextServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>newsList</servlet-name>
+    <url-pattern>/list/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addNews</servlet-name>
+    <url-pattern>/servlet/addNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addTopic</servlet-name>
+    <url-pattern>/servlet/addTopic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateNews</servlet-name>
+    <url-pattern>/servlet/updateNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteNews</servlet-name>
+    <url-pattern>/servlet/deleteNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContentServlet</servlet-name>
+    <url-pattern>/servlet/ContentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delStudent</servlet-name>
+    <url-pattern>/servlet/delStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>topicServlet</servlet-name>
+    <url-pattern>/servlet/topicServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
